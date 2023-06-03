@@ -15,11 +15,12 @@ import {
     VStack,
     Image,
     Text,
+    Link,
     useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-const Navbar = () => {
+export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
@@ -59,9 +60,11 @@ const Navbar = () => {
                                 <Button variant="ghost" fontSize={'xl'} color="green.500">
                                     Quiz
                                 </Button>
-                                <Button variant="ghost" fontSize={'xl'} color="red.500">
+                                <Link href="/resources">
+                                <Button variant="outline" fontSize={'xl'} color="red.500">
                                     Resources
                                 </Button>
+                                </Link>
                                 <Spacer />
                             </VStack>
                             <Box py={10}>
@@ -95,22 +98,26 @@ const Navbar = () => {
             <Box display={{ base: 'none', md: 'block' }}>
                 <Flex align="center" >
                     <Image src="/path/to/logo.png" alt="Logo" w={10} h={10} mr={2} />
+                    <Link href="/learn">
                     <Button variant="ghost" color="purple.500" mr={4}>
                         Learn
                     </Button>
+                    </Link>
+                    <Link href="/explore">
                     <Button variant="ghost" color="blue.500" mr={4}>
                         Explore
                     </Button>
+                    </Link>
                     <Button variant="ghost" color="green.500" mr={4}>
                         Quiz
                     </Button>
-                    <Button variant="ghost" color="red.500" mr={4}>
-                        Resources
-                    </Button>
+                    <Link href="/resources">
+                        <Button variant="ghost" color="pink.500" mr={4}>
+                            Resources
+                        </Button>
+                    </Link>
                 </Flex>
             </Box>
         </Flex>
     );
 };
-
-export default Navbar;
