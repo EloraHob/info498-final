@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Stack, Grid, GridItem, IconButton, Tooltip, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button, useColorModeValue } from '@chakra-ui/react';
+import { Box, Text, Grid, IconButton, Tooltip, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Button} from '@chakra-ui/react';
 import { InfoIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 
 // Array of quotes and video clip details
@@ -35,8 +35,8 @@ function ExplorePage() {
     setIsModalOpen(false);
   };
 
-  const bgColor = useColorModeValue('white', 'gray.800');
-  const textColor = useColorModeValue('gray.800', 'white');
+  const bgColor = 'white';
+  const textColor = 'gray.800';
 
   return (
     <Box p={8} bg={bgColor}>
@@ -56,7 +56,7 @@ function ExplorePage() {
             _hover={{ transform: 'scale(1.05)' }}
             cursor="pointer"
             onClick={() => openModal(item)}
-            bg={useColorModeValue('gray.100', 'gray.700')}
+            bg={'gray.100'}
           >
             <Text fontSize="xl" fontWeight="bold" mb={4} color={textColor}>
               {item.name}
@@ -70,8 +70,8 @@ function ExplorePage() {
                 variant="outline"
                 size="lg"
                 aria-label="Learn more"
-                color={useColorModeValue('gray.500', 'gray.400')}
-                _hover={{ color: useColorModeValue('gray.700', 'gray.300') }}
+                color={'gray.500'}
+                _hover={{ color: 'gray.700' }}
               />
             </Tooltip>
           </Box>
