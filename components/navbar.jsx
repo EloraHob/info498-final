@@ -95,7 +95,7 @@ export default function Navbar() {
             <Box display={{ base: 'none', md: 'block' }}>
                 <Flex align="center" >
                     <Image src="/vercel.svg" alt="Logo" w={10} h={10} mr={2} />
-                    <Link href="/">
+                    <Link href="/index">
                     <Button variant="ghost" color="purple.500" mr={4}>
                         What is CRT?
                     </Button>
