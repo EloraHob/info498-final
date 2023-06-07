@@ -35,7 +35,7 @@ const MythSection = () => {
     },
     {
       myth: 'CRT is an anti-American ideology.',
-      fact: 'CRT provides a framework to examine how race and racism have shaped American institutions and policies, with the goal of promoting equality and justice\- values that are foundational to American society.',
+      fact: 'CRT provides a framework to examine how race and racism have shaped American institutions and policies, with the goal of promoting equality and justice- values that are foundational to American society.',
       quote: '... We believe in the 13th, 14th, 15th amendments, we believe in the promises of equality, and we know we can\'t get there if we can\'t confront and talk honestly about inequality.',
       author: 'Kimberlé Crenshaw, UCLA law professor & Civil Rights Activist',
     },
@@ -44,7 +44,7 @@ const MythSection = () => {
       fact: 'CRT rejects the notion of racial superiority or inferiority. CRT emphasizes the idea that race is a social construct that has been used historically to justify and perpetuate inequalities and power imbalances. The goal of CRT is to analyze and challenge these systemic inequities to achieve social justice and equity.',
     },
   ];
-
+  
   return (
     <Flex p={10} justifyContent="center" alignItems="center">
       <Box w="600px" p={4} bg="gray.200" borderRadius="md" shadow="md">

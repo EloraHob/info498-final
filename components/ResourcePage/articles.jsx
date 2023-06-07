@@ -58,7 +58,7 @@ export default function Articles() {
                     <Box
                         key={index}
                         maxW={'445px'}
-                        bg={useColorModeValue('white', 'gray.900')}
+                        bg={'white'}
                         boxShadow={'2xl'}
                         rounded={'md'}
                         overflow={'hidden'}

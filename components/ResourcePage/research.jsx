@@ -4,7 +4,6 @@ import {
   Heading,
   Text,
   Button,
-  useColorModeValue,
 } from '@chakra-ui/react';
 
 const resourceData = [
@@ -57,7 +56,7 @@ export default function Research() {
           <Box
             key={index}
             minW={'445px'}
-            bg={useColorModeValue('white', 'gray.900')}
+            bg={'white'}
             boxShadow={'2xl'}
             rounded={'md'}
             overflow={'hidden'}

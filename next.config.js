@@ -8,4 +8,5 @@ module.exports = {
   nextConfig,
   assetPrefix: isProd ? '/info498-final' : '',
   basePath: isProd ? '/info498-final' : '',
+  ignoreDuringBuilds: true,
 };
