@@ -4,8 +4,6 @@ const nextConfig = {
 }
 
 module.exports = {
-  nextConfig,
   assetPrefix: '',
   basePath: '',
-  ignoreDuringBuilds: true,
 };
