@@ -46,21 +46,25 @@ export default function Navbar() {
                         <DrawerCloseButton />
                         <DrawerHeader>
                             <Flex justify="center" my={4}>
-                                <Image src="/path/to/logo.png" alt="Logo" w={24} h={24} />
+                                <Image src="/hands-logo.png" alt="Logo" w={28} h={24} />
                             </Flex>
                         </DrawerHeader>
                         <DrawerBody display="flex" flexDir="column">
                             <VStack spacing={10} flex="1" >
-                                <Button variant="ghost" fontSize={'xl'} color="purple.500">
-                                    What is CRT?
-                                </Button>
-                                <Button variant="ghost" fontSize={'xl'} color="blue.500">
-                                    CRT in Technology
-                                </Button>
+                                <Link href="/">
+                                    <Button variant="ghost" fontSize={'xl'} color="purple.500">
+                                        What is CRT?
+                                    </Button>
+                                </Link>
+                                <Link href="/technology">
+                                    <Button variant="ghost" fontSize={'xl'} color="blue.500">
+                                        CRT in Technology
+                                    </Button>
+                                </Link>
                                 <Link href="/resources">
-                                <Button variant="outline" fontSize={'xl'} color="red.500">
-                                    Resources
-                                </Button>
+                                    <Button variant="unstyled" fontSize={'xl'} color="red.500">
+                                        Resources
+                                    </Button>
                                 </Link>
                                 <Spacer />
                             </VStack>
@@ -94,16 +98,16 @@ export default function Navbar() {
 
             <Box display={{ base: 'none', md: 'block' }}>
                 <Flex align="center" >
-                    <Image src="/vercel.svg" alt="Logo" w={10} h={10} mr={2} />
-                    <Link href="/index">
-                    <Button variant="ghost" color="purple.500" mr={4}>
-                        What is CRT?
-                    </Button>
+                    <Image src="/hands-logo.png" alt="Logo" w={14} h={10} mr={2} />
+                    <Link href="/">
+                        <Button variant="ghost" color="purple.500" mr={4}>
+                            What is CRT?
+                        </Button>
                     </Link>
                     <Link href="/technology">
-                    <Button variant="ghost" color="blue.500" mr={4}>
-                        CRT in Tech
-                    </Button>
+                        <Button variant="ghost" color="blue.500" mr={4}>
+                            CRT in Tech
+                        </Button>
                     </Link>
                     <Link href="/resources">
                         <Button variant="ghost" color="pink.500" mr={4}>
